@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Fitness</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* CSS Reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(img/body.jpg);
+            color: white;
+            font-family: 'Baloo Chettan 2', cursive;
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            padding: 10px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            line-height: 25px;
+            font-size: 20px;
+
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+            margin: 0px 21px;
+
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            /* border: 2px solid yellowgreen; */
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+
+        }
+
+        .right {
+
+            /* border: 2px solid whitesmoke; */
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 25px 20px;
+            
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: brown;
+           /* transition-property: ; */
+           animation-name: animation;
+           animation-duration: 2s;
+
+            
+
+        }
+
+        .btn {
+            margin: 18px 3px;
+            padding: 5px 7px;
+            background-color: black;
+            color: whitesmoke;
+            /* border: 2px solid grey; */
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(168, 146, 146);
+            font-family: 'Baloo Chettan 2', cursive;
+
+        }
+
+        .container {
+            /* border: 2px solid rgb(245, 237, 237); */
+            opacity: 0.7;
+            margin: 153px 224px;
+            padding: 40px 5px;
+            width: 40%;
+            background-color: rgb(70, 65, 65);
+            border-radius: 3px;
+            box-shadow: 10px 5px 5px #AE8B70;
+        }
+
+        .form-group input {
+            border: 2px solid brown;
+            padding: 5px;
+            margin: 5px auto;
+            text-align: center;
+            width: 400px;
+            display: block;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin: 9px 1px;
+            padding: 19px 15px;
+            font-size: 27px;
+        }
+
+        .container button {
+            opacity: 1;
+            margin: 20px auto;
+            width: 145px;
+            display: block;
+            padding: 5px 5px;
+        }
+        @keyframes animation{
+            0%{
+                border-bottom: 0px solid black;
+            }
+            50%{
+                border-bottom: 2px solid brown;
+            }
+            100%{
+                border-bottom: 2px solid whitesmoke;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo  -->
+        <div class="left">
+
+            <img src="img/logo.png" alt="no img">
+            <div>
+                Ankit Fitness
+
+            </div>
+        </div>
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <!-- <li><a href="#" class="active">Home</a></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Kathmandu now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Create a new password">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Confirm your password">
+            </div>
+            <button class="btn">Subit</button>
+        </form>
+    </div>
+</body>
+
+</html>
